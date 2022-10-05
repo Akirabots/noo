@@ -6,7 +6,16 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
+    <EditText
+        android:id="@+id/et_PersonName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Name:" />
+
     <TextView
+        android:textColor="@color/black"
         android:id="@+id/tx_dayQuestion"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -36,6 +45,7 @@
     </RadioGroup>
 
     <TextView
+        android:textColor="@color/black"
         android:id="@+id/tx_feelingQuestion"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -63,5 +73,42 @@
             android:layout_height="wrap_content"
             android:text="Meh" />
     </RadioGroup>
+
+    <TextView
+        android:textColor="@color/black"
+        android:id="@+id/tx_hobbyQuestion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="What are your hobbies?" />
+
+    <CheckBox
+        android:id="@+id/cb_drawingHobbyQuestionChoice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Drawing" />
+
+    <CheckBox
+        android:id="@+id/cb_playigSportsHobbyQuestionChoice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Playing Sports" />
+
+    <CheckBox
+        android:id="@+id/cd_playingGamesHobbyQuestionChoice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Playing Games" />
+
+    <CheckBox
+        android:id="@+id/cb_readingHobbyQuestionChoice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Reading" />
+
+    <CheckBox
+        android:id="@+id/tx_otherHobbyQuestionChoice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Other" />
 
 </LinearLayout>
