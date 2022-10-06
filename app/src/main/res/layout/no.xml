@@ -1,6 +1,114 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-             android:layout_width="match_parent"
-             android:layout_height="match_parent">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <EditText
+        android:id="@+id/et_PersonName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Name:" />
+
+    <TextView
+        android:textColor="@color/black"
+        android:id="@+id/tx_dayQuestion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="How is your day going?" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/rd_goodDayQuestionChoice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Good" />
+
+        <RadioButton
+            android:id="@+id/rd_badDayQuestionChoice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Bad" />
+
+        <RadioButton
+            android:id="@+id/rd_mehDayQuestionChoice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Meh" />
+    </RadioGroup>
+
+    <TextView
+        android:textColor="@color/black"
+        android:id="@+id/tx_feelingQuestion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="How are you feeling today?" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/rd_goodFeelingDayChoice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Good" />
+
+        <RadioButton
+            android:id="@+id/rd_badFeelingDayChoice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Bad" />
+
+        <RadioButton
+            android:id="@+id/rd_mehFeelingDayChoice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Meh" />
+    </RadioGroup>
+
+    <TextView
+        android:textColor="@color/black"
+        android:id="@+id/tx_hobbyQuestion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="What are your hobbies?" />
+
+    <CheckBox
+        android:id="@+id/cb_drawingHobbyQuestionChoice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Drawing" />
+
+    <CheckBox
+        android:id="@+id/cb_playigSportsHobbyQuestionChoice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Playing Sports" />
+
+    <CheckBox
+        android:id="@+id/cd_playingGamesHobbyQuestionChoice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Playing Games" />
+
+    <CheckBox
+        android:id="@+id/cb_readingHobbyQuestionChoice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Reading" />
+
+    <CheckBox
+        android:id="@+id/tx_otherHobbyQuestionChoice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Other" />
+
+</LinearLayout>
